@@ -3,7 +3,7 @@ Preliminary open-source demo of the Active-Archive pipeline—showcasing KG-guid
 
 
 # Run the RAG curation pipeline on the sample PDF
-python -m active_archives.rag_curation data/sample_report.pdf
+python -m src.rag_curation data/sample_report.pdf
 
 # Try a knowledge-graph-guided search query
-python -m active_archives.kg_exploration "Company A CO2 2025"
+python -m src.kg_exploration "Company A CO2 2025"
