@@ -2,8 +2,8 @@
 Preliminary open-source demo of the Active-Archive pipeline—showcasing KG-guided search and RAG-assisted curation—built on a subset of ESG sustainability reports drawn from https://huggingface.co/datasets/DataNeed/company-reports
 
 
-# RAG-based curation (auto-approves suggestion)
-python src/rag_curation.py data/sample_report.pdf
+# Run the RAG curation pipeline on the sample PDF
+python -m active_archives.rag_curation data/sample_report.pdf
 
-# KG-guided search
-python src/kg_search.py "Company A 2025 CO2"****
+# Try a knowledge-graph-guided search query
+python -m active_archives.kg_exploration "Company A CO2 2025"
